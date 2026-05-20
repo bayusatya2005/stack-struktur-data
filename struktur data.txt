@@ -1,0 +1,25 @@
+# Input nama
+nama = input("Masukkan nama pendek anda: ")
+
+# Cek nama (misalnya tidak boleh kosong) 
+if nama != "":
+    print(f"Selamat datang {nama}")
+else:
+    print("Program selesai")
+    exit()
+
+# Input umur
+umur = int(input("Masukkan umur anda: "))
+
+# Percabangan umur
+if umur >= 18:
+    print("Anda cukup umur")
+elif umur < 18 and umur > 0:
+    print("Anda belum cukup umur")
+elif umur <= 0:
+    print("Anda belum lahir")
+
+if umur > 60:
+    print("Banyakin ibadah, bentar lagi mati")
+
+print("Program selesai")
