@@ -1,23 +1,21 @@
 
-# Nama yang benar (ganti sesuai nama pendek kamu)
-nama_benar = "bayu"
+#Memasukkan nama
 
-# Input nama
-nama = input("Masukan nama anda: ")
-
-# Validasi nama
-if nama.lower() == nama_benar:
-    print("Nama benar, lanjut ke program...\n")
-    
-    # Input angka
-    angka = int(input("Masukkan angka (1-10): "))
-    
-    # Validasi angka
-    if 1 <= angka <= 10:
-        print(f"\nTabel perkalian {angka}:")
-        for i in range(1, 11):
-            print(f"{angka} x {i} = {angka * i}")
-    else:
-        print("Angka harus antara 1 sampai 10")
+nama = input("Masukkan Nama Pendek Anda: ")
+if nama == "bayu":
+    print("SELAMAT DATANG BAYU")
+    print("BAIK HATI")
 else:
-    print("Silahkan coba lagi")
+    print("Program Selesai")
+
+#Memasukkan umur
+
+umur = int(input("Masukkan Umur Anda: "))
+if  umur <= 0:
+    print("anda belum lahir")
+elif umur > 60:
+    print("banyakin ibadah, bentar lagi ketemu yang maha kuasa")
+elif umur >= 18:
+    print("anda sudah cukup umur")
+elif umur < 18:
+    print("anda belum cukup umur")
